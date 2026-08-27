@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="TravelBharat - Explore India's states, cities, tourist destinations, heritage, nature, adventure and religious places.">
+
+    <title>
+        TravelBharat | Explore India State by State
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>City Details - Travel Bharat</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+
+        .city-hero-image {
+            width: 100%;
+            height: 550px;
+            display: block;
+            object-fit: cover;
+            object-position: center;
+        }
+
+
+        @media (max-width: 768px) {
+
+            .city-hero-image {
+                height: 350px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+   <header id="header">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <nav class="navbar container">
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-earth-asia"></i>
+            </span>
+
+            <span class="logo-text">
+                Travel<span>Bharat</span>
+            </span>
+
+        </a>
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu" id="navMenu">
+
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#states" class="nav-link">
+                        States
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#categories" class="nav-link">
+                        Categories
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Navbar Actions -->
+            <div class="nav-actions">
+
+                <!-- Dark Mode -->
+                <button
+                    class="theme-btn"
+                    id="themeBtn"
+                    aria-label="Toggle dark mode"
+                >
+                    <span id="themeIcon">🌙</span>
+                </button>
+
+
+                <!-- Mobile Menu -->
+                <button
+                    class="menu-btn"
+                    id="menuBtn"
+                    aria-label="Open navigation menu"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================= -->
+
+    <section class="hero" id="home">
+
+        <!-- Hero Background Overlay -->
+        <div class="hero-overlay"></div>
+
+
+        <div class="hero-content container">
+
+            <!-- Small Heading -->
+            <p class="hero-subtitle">
+                 DISCOVER INCREDIBLE INDIA
+            </p>
+
+
+            <!-- Main Heading -->
+            <h1 class="hero-title">
+
+                Explore India,
+
+                <span>
+                     Explore India State by State
+                </span>
+
+            </h1>
+
+
+            <!-- Description -->
+            <p class="hero-description">
+
+               Discover India's breathtaking heritage, ancient monuments,
+                majestic mountains, beautiful beaches, wildlife sanctuaries,
+                vibrant festivals, spiritual destinations, and hidden gems —
+                all from one comprehensive tourism platform.
+            </p>
+
+
+           
+
+            <!-- Hero Buttons -->
+            <div class="hero-buttons">
+
+                <a
+                    href="#explore"
+                    class="btn btn-primary"
+                >
+                    Explore Destinations
+                    <span>→</span>
+                </a>
+
+
+                <a
+                    href="#states"
+                    class="btn btn-secondary"
+                >
+                    Explore States
+                    <span>→</span>
+                </a>
+
+            </div>
+
+
+            <!-- Scroll Indicator -->
+            <a
+                href="#explore"
+                class="scroll-indicator"
+            >
+
+                <span>
+                    Discover More
+                </span>
+
+                <span class="scroll-arrow">
+                    ↓
+                </span>
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==================================
+          STATES SECTION 
+    ================================== -->
+
+    <section
+        class="states-section"
+        id="states"
+    >
+
+        <div class="container">
+
+
+            <!-- Section Heading -->
+            <div class="section-header">
+
+                <span class="section-tag">
+                    DISCOVER INDIA
+                </span>
+
+
+                <h2 class="section-title">
+
+                    Explore India
+                    <span>State by State</span>
+
+                </h2>
+
+
+                <p class="section-description">
+
+                    Discover the diverse culture,
+                    breathtaking landscapes, rich heritage
+                    and unforgettable experiences across India.
+
+                </p>
+
+            </div>
+
+
+            <!-- States Search -->
+            <div class="states-search">
+
+                <span>🔍</span>
+
+
+                <input
+                    type="text"
+                    id="stateSearch"
+                    placeholder="Search an Indian state..."
+                    autocomplete="off"
+                >
+
+
+                <button
+                    id="clearStateSearch"
+                    type="button"
+                >
+                    ×
+                </button>
+
+            </div>
+
+
+            <!-- States Grid -->
+            <div
+                class="states-grid"
+                id="statesGrid"
+            >
+                <!-- Cards generated by JavaScript -->
+            </div>
+
+
+            <!-- No Results -->
+            <div
+                class="no-state-result"
+                id="noStateResult"
+            >
+
+                <div class="no-state-icon">
+                    🔍
+                </div>
+
+
+                <h3>
+                    No State Found
+                </h3>
+
+
+                <p>
+                    Try searching with another state name.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         FUTURE SECTIONS
+    ========================= -->
+
+    <!-- Explore Section -->
+    <section id="explore">
+        <!-- We will build this later -->
+    </section>
+
+
+   <!-- =========================================================
+     EXPLORE BY INTEREST
+========================================================= -->
+
+<section id="categories" class="interest-section">
+
+    <div class="interest-container">
+
+        <!-- SECTION HEADER -->
+
+        <div class="interest-header">
+
+            <span class="section-kicker">
+                DISCOVER INDIA
+            </span>
+
+            <h2>
+                Find Destinations by Interest
+            </h2>
+
+            <p>
+                Explore India's heritage, nature, spiritual and
+                adventure destinations based on your interests.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             CATEGORY CARDS
+        ================================================== -->
+
+        <div class="interest-grid">
+
+
+            <!-- HERITAGE -->
+
+            <article
+                class="interest-card"
+                data-category="heritage"
+            >
+
+                <div class="interest-icon">
+                    🏛️
+                </div>
+
+                <div class="interest-content">
+
+                    <h3>
+                        Heritage
+                    </h3>
+
+                    <p>
+                        Historic forts, palaces, monuments,
+                        caves, museums and heritage destinations.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- NATURE -->
+
+            <article
+                class="interest-card"
+                data-category="nature"
+            >
+
+                <div class="interest-icon">
+                    🌿
+                </div>
+
+                <div class="interest-content">
+
+                    <h3>
+                        Nature
+                    </h3>
+
+                    <p>
+                        Waterfalls, forests, mountains, valleys,
+                        lakes and beautiful natural landscapes.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- RELIGIOUS -->
+
+            <article
+                class="interest-card"
+                data-category="religious"
+            >
+
+                <div class="interest-icon">
+                    🛕
+                </div>
+
+                <div class="interest-content">
+
+                    <h3>
+                        Religious
+                    </h3>
+
+                    <p>
+                        Temples, mosques, churches, monasteries
+                        and spiritual destinations.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- ADVENTURE -->
+
+            <article
+                class="interest-card"
+                data-category="adventure"
+            >
+
+                <div class="interest-icon">
+                    🏔️
+                </div>
+
+                <div class="interest-content">
+
+                    <h3>
+                        Adventure
+                    </h3>
+
+                    <p>
+                        Trekking, mountains, rafting, camping
+                        and exciting outdoor experiences.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CATEGORY RESULTS
+========================================================= -->
+
+<section
+    id="categoryExplorer"
+    class="category-explorer"
+>
+
+    <div class="category-container">
+
+
+        <!-- RESULT HEADER -->
+
+        <div class="category-result-header">
+
+            <div class="category-result-title">
+
+                <div
+                    id="selectedCategoryIcon"
+                    class="selected-category-icon"
+                >
+                    🏛️
+                </div>
+
+                <div>
+
+                    <span class="result-kicker">
+                        EXPLORE BY INTEREST
+                    </span>
+
+                    <h2 id="selectedCategoryTitle">
+                        Heritage
+                    </h2>
+
+                    <p id="selectedCategoryDescription">
+                        Explore amazing destinations across India.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- TOTAL COUNT -->
+
+            <div
+                id="categoryPlaceCount"
+                class="category-place-count"
+            >
+                0 Places
+            </div>
+
+        </div>
+
+
+        <!-- PLACE CARDS -->
+
+        <div
+            id="categoryPlacesGrid"
+            class="category-places-grid"
+        >
+        </div>
+
+
+    </div>
+
+</section>
+
+    <!-- =========================================================
+     ABOUT SECTION
+========================================================= -->
+
+<section class="about-section" id="about">
+
+    <div class="about-container">
+
+        <!-- Section Heading -->
+        <div class="about-heading">
+
+            <span class="about-badge">
+                 DISCOVER INDIA
+            </span>
+
+            <h2>
+                Explore India With
+                <span>TravelBharat</span>
+            </h2>
+
+            <p>
+                Your gateway to discovering India's incredible
+                destinations, culture, heritage, nature and adventures.
+            </p>
+
+        </div>
+
+
+        <!-- Main About Content -->
+
+        <div class="about-main">
+
+            <!-- Left Side -->
+
+            <div class="about-visual">
+
+                <div class="about-image-card">
+
+                    <img
+                        src="images/about-india.jpg"
+                        alt="Beautiful destination in India"
+                    >
+
+                    <div class="about-image-overlay">
+
+                        <div class="about-overlay-icon">
+                            🇮🇳
+                        </div>
+
+                        <div>
+                            <strong>Incredible India</strong>
+                            <span>Explore • Discover • Experience</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Floating Card -->
+
+                <div class="about-floating-card">
+
+                    <span class="floating-icon">
+                        ✈️
+                    </span>
+
+                    <div>
+                        <strong>Explore More</strong>
+                        <p>Travel across India</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Side -->
+
+            <div class="about-content">
+
+                <span class="about-small-title">
+                    ABOUT TRAVELBHARAT
+                </span>
+
+                <h3>
+                    One platform to
+                    <span>discover India</span>
+                </h3>
+
+                <p>
+                    TravelBharat is a digital tourism platform designed
+                    to make exploring India easier and more enjoyable.
+                    Discover beautiful destinations across different
+                    states and cities from one organized platform.
+                </p>
+
+                <p>
+                    From magnificent heritage sites and peaceful
+                    spiritual destinations to breathtaking natural
+                    landscapes and exciting adventure spots,
+                    TravelBharat helps you discover the diversity
+                    of India.
+                </p>
+
+
+                <!-- Features -->
+
+                <div class="about-features">
+
+                    <div class="about-feature-card">
+
+                        <div class="feature-icon">
+                            🗺️
+                        </div>
+
+                        <div>
+                            <h4>Explore States</h4>
+
+                            <p>
+                                Discover destinations across India.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-feature-card">
+
+                        <div class="feature-icon">
+                            📍
+                        </div>
+
+                        <div>
+                            <h4>Discover Places</h4>
+
+                            <p>
+                                Find amazing tourist attractions.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-feature-card">
+
+                        <div class="feature-icon">
+                            🏛️
+                        </div>
+
+                        <div>
+                            <h4>Rich Heritage</h4>
+
+                            <p>
+                                Experience India's culture and history.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-feature-card">
+
+                        <div class="feature-icon">
+                            🧳
+                        </div>
+
+                        <div>
+                            <h4>Travel Better</h4>
+
+                            <p>
+                                Get useful destination information.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- CTA -->
+
+                <a href="#states" class="about-btn">
+                    Explore India
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Statistics -->
+
+        <div class="about-stats">
+
+            <div class="about-stat">
+
+                <div class="stat-number">
+                    28+
+                </div>
+
+                <div class="stat-label">
+                    States
+                </div>
+
+            </div>
+
+
+            <div class="about-stat">
+
+                <div class="stat-number">
+                    100+
+                </div>
+
+                <div class="stat-label">
+                    Destinations
+                </div>
+
+            </div>
+
+
+            <div class="about-stat">
+
+                <div class="stat-number">
+                    4
+                </div>
+
+                <div class="stat-label">
+                    Categories
+                </div>
+
+            </div>
+
+
+            <div class="about-stat">
+
+                <div class="stat-number">
+                    1
+                </div>
+
+                <div class="stat-label">
+                    Incredible India
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    
+   <!-- Contact Section -->
+<section id="contact" class="contact-section">
+
+    <div class="contact-container">
+
+        <!-- Section Heading -->
+        <div class="contact-heading">
+            <span class="section-tag">GET IN TOUCH</span>
+            <h2>Plan Your Journey</h2>
+            <p>
+                Have a question about your next trip?
+                Tell us your plans and let Travel Bharat help you explore India.
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+
+            <form id="contactForm">
+
+                <!-- Name + Email -->
+                <div class="contact-form-row">
+
+                    <div class="form-group">
+                        <label for="contactName">Name</label>
+
+                        <input
+                            type="text"
+                            id="contactName"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                        <small class="form-error" id="nameError"></small>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="contactEmail">Email</label>
+
+                        <input
+                            type="email"
+                            id="contactEmail"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                        <small class="form-error" id="emailError"></small>
+                    </div>
+
+                </div>
+
+
+                <!-- Phone + State -->
+                <div class="contact-form-row">
+
+                    <div class="form-group">
+                        <label for="contactPhone">Phone</label>
+
+                        <input
+                            type="tel"
+                            id="contactPhone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+
+                        <small class="form-error" id="phoneError"></small>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="destination">State / Destination</label>
+
+                        <select
+                            id="destination"
+                            name="destination"
+                            required
+                        >
+                            <option value="">Choose a destination</option>
+
+                            <option>Andhra Pradesh</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>Chhattisgarh</option>
+                            <option>Delhi</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
+                            <option>Himachal Pradesh</option>
+                            <option>Jammu & Kashmir</option>
+                            <option>Jharkhand</option>
+                            <option>Karnataka</option>
+                            <option>Kerala</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Maharashtra</option>
+                            <option>Odisha</option>
+                            <option>Punjab</option>
+                            <option>Rajasthan</option>
+                            <option>Sikkim</option>
+                            <option>Tamil Nadu</option>
+                            <option>Telangana</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Uttarakhand</option>
+                            <option>West Bengal</option>
+                        </select>
+
+                        <small class="form-error" id="destinationError"></small>
+                    </div>
+
+                </div>
+
+
+                <!-- Travel Type -->
+                <div class="form-group">
+                    <label for="travelType">Travel Type</label>
+
+                    <select
+                        id="travelType"
+                        name="travelType"
+                        required
+                    >
+                        <option value="">Select travel type</option>
+
+                        <option>Family Trip</option>
+                        <option>Solo Travel</option>
+                        <option>Couple Trip</option>
+                        <option>Adventure</option>
+                        <option>Spiritual Journey</option>
+                        <option>Nature & Wildlife</option>
+                        <option>Heritage & Culture</option>
+                    </select>
+
+                    <small class="form-error" id="travelTypeError"></small>
+                </div>
+
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="contactMessage">Your Message</label>
+
+                    <textarea
+                        id="contactMessage"
+                        name="message"
+                        rows="6"
+                        placeholder="Tell us about your travel plans..."
+                        required
+                    ></textarea>
+
+                    <small class="form-error" id="messageError"></small>
+                </div>
+
+
+                <!-- Submit Button -->
+                <button
+                    type="submit"
+                    class="contact-submit-btn"
+                    id="contactSubmit"
+                >
+                    <span>Send Message</span>
+                    <span class="submit-arrow">→</span>
+                </button>
+
+
+                <!-- Success Message -->
+                <div
+                    id="contactSuccess"
+                    class="contact-success"
+                >
+                    ✓ Message sent successfully! Thank you for contacting Travel Bharat.
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- Back To Top Button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    ↑
+</button>
+
+
+    <!-- =========================
+         JavaScript
+    ========================= -->
+
+    <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

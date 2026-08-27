@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>City Details - Travel Bharat</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+
+    <style>
+        .city-page { 
+            padding: 35px 0 70px; 
+            background: #f8fafc; 
+            min-height: 100vh; 
+        }
+        .city-page-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .city-back {
+            display: inline-block;
+            margin-bottom: 25px;
+            text-decoration: none;
+            color: #0F4C81;
+            font-weight: 600;
+        }
+
+        .city-hero-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.10);
+        }
+
+        .city-hero-image {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .city-content {
+            padding: 40px;
+        }
+
+        .city-state {
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background: #fff1e6;
+            color: #FF7A00;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .city-content h1 {
+            font-size: 48px;
+            margin: 0 0 15px;
+            color: #222;
+        }
+
+        .city-intro {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #666;
+            max-width: 850px;
+        }
+
+        .city-info-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .city-info-box {
+            padding: 25px;
+            background: #f8fafc;
+            border-radius: 15px;
+        }
+
+        .city-info-box h3 {
+            margin: 0 0 8px;
+            color: #0F4C81;
+        }
+
+        .city-info-box p {
+            margin: 0;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .city-section {
+            margin-top: 45px;
+        }
+
+        .city-section h2 {
+            font-size: 30px;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .city-section p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        .attractions-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .attraction-card {
+            padding: 25px;
+            background: white;
+            border-radius: 15px;
+            border: 1px solid #e5e7eb;
+            transition: 0.3s ease;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .attraction-card h3 {
+            margin-top: 0;
+            color: #222;
+        }
+
+        .attraction-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .error-message {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        
+
+        @media (max-width: 768px) {
+
+            .city-page {
+                padding-top: 80px;
+            }
+
+            .city-hero-image {
+                height: 280px;
+            }
+
+            .city-content {
+                padding: 25px;
+            }
+
+            .city-content h1 {
+                font-size: 36px;
+            }
+
+            .city-info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .attractions-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    
+
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <header id="header">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <nav class="navbar container">
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-earth-asia"></i>
+            </span>
+
+            <span class="logo-text">
+                Travel<span>Bharat</span>
+            </span>
+
+        </a>
+
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu" id="navMenu">
+
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link active">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#states" class="nav-link">
+                        States
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#categories"class="nav-link">
+                        Categories
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#about"class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#contact"class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+
+            <!-- Navbar Actions -->
+            <div class="nav-actions">
+
+                <!-- Dark Mode -->
+                <button
+                    class="theme-btn"
+                    id="themeBtn"
+                    aria-label="Toggle dark mode"
+                >
+                    <span id="themeIcon">🌙</span>
+                </button>
+
+
+                <!-- Mobile Menu -->
+                <button
+                    class="menu-btn"
+                    id="menuBtn"
+                    aria-label="Open navigation menu"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="city-page">
+    
+        <div class="city-page-container">
+            
+
+            <a href="javascript:history.back()" class="city-back">
+                ← Back
+            </a>
+
+            <div id="cityPageContent">
+
+                <!-- JavaScript yahan city information dalega -->
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Back To Top Button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    ↑
+</button>
+
+
+
+    
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
+

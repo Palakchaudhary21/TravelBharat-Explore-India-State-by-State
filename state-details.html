@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="TravelBharat - Explore detailed information about Indian states, cities and tourist destinations."
+    >
+
+    <title>
+        State Details | TravelBharat
+    </title>
+
+    <!-- Main CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <header id="header">
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <nav class="navbar container">
+
+        <!-- Logo -->
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-earth-asia"></i>
+            </span>
+
+            <span class="logo-text">
+                Travel<span>Bharat</span>
+            </span>
+
+        </a>
+
+
+            <!-- Desktop Navigation -->
+            <ul class="nav-menu" id="navMenu">
+
+                <li class="nav-item">
+                    <a href="index.html#home" class="nav-link active">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#states" class="nav-link">
+                        States
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#categories"class="nav-link">
+                        Categories
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#about"class="nav-link">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="index.html#contact"class="nav-link">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- Navbar Actions -->
+            <div class="nav-actions">
+
+                <!-- Dark Mode -->
+                <button
+                    class="theme-btn"
+                    id="themeBtn"
+                    aria-label="Toggle dark mode"
+                >
+                    <span id="themeIcon">🌙</span>
+                </button>
+
+
+                <!-- Mobile Menu -->
+                <button
+                    class="menu-btn"
+                    id="menuBtn"
+                    aria-label="Open navigation menu"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- =================================================
+         STATE DETAILS HERO
+    ================================================== -->
+
+    <section
+        class="state-details-hero"
+        id="stateDetailsHero"
+    >
+
+        <div class="state-details-overlay"></div>
+
+
+        <div class="container state-details-content">
+
+            <!-- Back Button -->
+
+            <a
+                href="index.html#states"
+                class="back-state-btn"
+            >
+                ← Back to States
+            </a>
+
+
+            <!-- Region -->
+
+            <span
+                class="state-details-region"
+                id="stateRegion"
+            >
+                India
+            </span>
+
+
+            <!-- State Name -->
+
+            <h1 id="stateName">
+                Loading...
+            </h1>
+
+
+            <!-- Description -->
+
+            <p id="stateDescription">
+                Discover the beauty, culture and heritage of India.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =================================================
+         ABOUT STATE
+    ================================================== -->
+
+    <section
+        class="state-about-section"
+    >
+
+        <div class="container">
+
+            <div class="state-about-grid">
+
+
+                <!-- Image -->
+
+                <div class="state-about-image">
+
+                    <img
+                        id="stateImage"
+                        src=""
+                        alt="State tourism"
+                    >
+
+                </div>
+
+
+                <!-- Content -->
+
+                <div class="state-about-content">
+
+                    <span class="section-tag">
+                        DISCOVER THE STATE
+                    </span>
+
+
+                    <h2>
+                        About
+                        <span id="aboutStateName">
+                            this state
+                        </span>
+                    </h2>
+
+
+                    <p id="stateAbout">
+                        Loading state information...
+                    </p>
+
+
+                    <a
+                        href="#cities"
+                        class="btn btn-primary"
+                    >
+                        Explore Cities
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =================================================
+         STATE INFORMATION
+    ================================================== -->
+
+    <section class="state-info-section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+                    QUICK INFORMATION
+                </span>
+
+                <h2 class="section-title">
+                    State
+                    <span>Highlights</span>
+                </h2>
+
+            </div>
+
+
+            <div class="state-info-grid">
+
+
+                <!-- Region -->
+
+                <div class="state-info-card">
+
+                    <div class="state-info-icon">
+                        📍
+                    </div>
+
+                    <h3>
+                        Region
+                    </h3>
+
+                    <p id="infoRegion">
+                        —
+                    </p>
+
+                </div>
+
+
+                <!-- Places -->
+
+                <div class="state-info-card">
+
+                    <div class="state-info-icon">
+                        🏛️
+                    </div>
+
+                    <h3>
+                        Tourist Places
+                    </h3>
+
+                    <p id="infoPlaces">
+                        —
+                    </p>
+
+                </div>
+
+
+                <!-- Cities -->
+
+                <div class="state-info-card">
+
+                    <div class="state-info-icon">
+                        🏙️
+                    </div>
+
+                    <h3>
+                        Popular Cities
+                    </h3>
+
+                    <p id="infoCities">
+                        —
+                    </p>
+
+                </div>
+
+
+                <!-- Best Time -->
+
+                <div class="state-info-card">
+
+                    <div class="state-info-icon">
+                        🌤️
+                    </div>
+
+                    <h3>
+                        Best Time
+                    </h3>
+
+                    <p id="infoBestTime">
+                        —
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =================================================
+         POPULAR CITIES
+    ================================================== -->
+
+    <section
+        class="cities-section"
+        id="cities"
+    >
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+                    EXPLORE CITIES
+                </span>
+
+                <h2 class="section-title">
+
+                    Popular Cities in
+                    <span id="citiesStateName">
+                        India
+                    </span>
+
+                </h2>
+
+                <p class="section-description">
+
+                    Discover popular cities, culture,
+                    attractions and experiences.
+
+                </p>
+
+            </div>
+
+
+            <!-- Cities Grid -->
+
+            <div
+                class="cities-grid"
+                id="citiesGrid"
+            >
+                <!-- Cities generated by JavaScript -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         TOURIST PLACES
+    ================================================== -->
+
+    <section
+        class="places-section"
+        id="places"
+    >
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <span class="section-tag">
+                    TOP DESTINATIONS
+                </span>
+
+
+                <h2 class="section-title">
+
+                    Tourist Places in
+                    <span id="placesStateName">
+                        India
+                    </span>
+
+                </h2>
+
+
+                <p class="section-description">
+
+                    Explore famous attractions,
+                    heritage sites, nature destinations
+                    and adventure experiences.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Category Filters -->
+
+            <div class="place-filters">
+
+                <button
+                    class="place-filter active"
+                    data-category="all"
+                >
+                    All
+                </button>
+
+
+                <button
+                    class="place-filter"
+                    data-category="heritage"
+                >
+                    🏛️ Heritage
+                </button>
+
+
+                <button
+                    class="place-filter"
+                    data-category="nature"
+                >
+                    🌿 Nature
+                </button>
+
+
+                <button
+                    class="place-filter"
+                    data-category="adventure"
+                >
+                    🏔️ Adventure
+                </button>
+
+
+                <button
+                    class="place-filter"
+                    data-category="religious"
+                >
+                    🛕 Religious
+                </button>
+
+            </div>
+
+
+
+            <!-- Places Grid -->
+
+            <div
+                class="places-grid"
+                id="placesGrid"
+            >
+                <!-- Tourist places generated by JS -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 TravelBharat.
+                Explore India, State by State.
+            </p>
+
+        </div>
+
+    </footer>
+    
+    <!-- Back To Top Button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    ↑
+</button>
+
+
+
+    <!-- JavaScript -->
+
+    <script
+        src="js/script.js"   
+    ></script>
+
+</body>
+
+</html>
