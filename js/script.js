@@ -973,7 +973,9 @@ function displayStates(states) {
    21. INITIAL STATE DISPLAY
 ========================================================= */
 
-displayStates(statesData);
+if (statesGrid) {
+    displayStates(statesData);
+}
 
 const stateDetailsData = {
 
