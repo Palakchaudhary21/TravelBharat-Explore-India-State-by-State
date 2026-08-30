@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# TravelBharat-Explore-India-State-by-State
-=======
+
 # TravelBharat – Explore India State by State
 
 ## Overview
